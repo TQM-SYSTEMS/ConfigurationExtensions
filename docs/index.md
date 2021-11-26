@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Расширения конфигурации
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+Расширения конфигурации позволяют значительно упростить адаптацию типового прикладного решения к потребностям конкретного внедрения, конкретного заказчика.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Описание свойств расширения
 
-## Project layout
+- [Префикс](about-extentions.md#_1)
+- [Назначение](about-extentions.md#_2)
+- [Деактивация](about-extentions.md#_3)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[Ссылка на официальный источник](https://v8.1c.ru/platforma/rasshireniya/)

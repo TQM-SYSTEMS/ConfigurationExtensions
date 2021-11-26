@@ -9,7 +9,7 @@ edit_uri: edit/main/docs
 copyright: Copyright &copy; 2021 Maxim Samokhval
 
 theme:
-  name: mkdocs
+  name: readthedocs
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -85,4 +85,5 @@ markdown_extensions:
       permalink: true
 # Page tree
 nav:
-  - Home: index.md
+  - Начало: index.md
+  - Версии: version.md
