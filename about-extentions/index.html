@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Maxim Samokhval">
+  <link rel="canonical" href="https://tqm-systems.github.io/ConfigurationExtensions/about-extentions/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>About extentions - Расширения конфигурации 1С</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../assets/stylesheets/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "About extentions";
+    var mkdocs_page_input_path = "about-extentions.md";
+    var mkdocs_page_url = "/ConfigurationExtensions/about-extentions/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Расширения конфигурации 1С</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Начало</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../version/">Версии</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Расширения конфигурации 1С</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>About extentions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/TQM-SYSTEMS/ConfigurationExtensions/edit/main/docs/about-extentions.md"> Edit on TQM-SYSTEMS/ConfigurationExtensions</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li><a href="#префикс">Префикс</a></li>
+<li><a href="#назначение">Назначение</a></li>
+<li><a href="#деактивация">Деактивация</a></li>
+</ul>
+<h2 id="_1">Префикс<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Конфигурация и расширение существуют в едином пространстве имен. Поэтому, чтобы не возникало конфликта, имена всех объектов, процедур и обработчиков, созданных в расширении, автоматически будут начинаться с префикса, заданного при создании расширения в поле Префикс. В дальнейшем этот префикс можно изменить в палитре свойств расширения, в свойстве Префикс имен.</p>
+<h2 id="_2">Назначение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Назначение расширения используется для того, чтобы задать порядок применения расширений к конфигурации (в случае если в информационную базу прикладного решения загружено несколько расширений). Назначение расширения может принимать значения Исправление, Адаптация и Дополнение.</p>
+<p>Расширение с назначением Исправление предназначено для исправления ошибок в конфигурации. Поэтому оно применяется к конфигурации первым. Затем применяется расширение с назначением Адаптация. Оно содержит доработки конфигурации при внедрении у конкретного заказчика. И последним применяется расширение с назначением Дополнение. Оно содержит различные дополнительные сервисы, предназначенные для конфигурации (например, набор дополнительных отчетов).</p>
+<p>Предполагается, что расширения с одинаковым назначением не должны «пересекаться» по функционалу и «мешать друг другу».</p>
+<p>Назначение расширения сохраняется в свойстве Назначение расширения конфигурации и может быть изменено позже из палитры свойств расширения . По умолчанию у вновь создаваемого расширения устанавливается назначение Адаптация.</p>
+<p>Следует учитывать, что устанавливать назначение расширения можно начиная с версии платформы 8.3.10. Применение расширений в порядке, соответствующем их назначению, работает только при отключенном режиме совместимости (свойства расширения Режим совместимости расширения конфигурации, Режим совместимости и свойство Режим совместимости конфигурации должны быть установлены в значение Не использовать).</p>
+<h2 id="_3">Деактивация<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Возможна ситуация (особенно в процессе разработки расширения), когда после подключения расширения в прикладном решении что-то пошло не так. Чтобы понять, «виновато» ли в этом расширение или нет, имеется удобная возможность деактивировать его и посмотреть, как будет работать прикладное решение без применения расширения.</p>
+<p>Для этого достаточно снять у расширения флажок Активно в списке расширений, причем сделать это можно как в конфигураторе, так и в режиме 1С:Предприятие в стандартной обработке Управление расширениями конфигурации.</p>
+<p>Таким образом можно, не удаляя само расширение, сделать его неактивным. В результате оно останется в списке расширений конфигурации, но не будет подключаться при старте прикладного решения. Чтобы вновь запустить работу конфигурации с расширением, потребуется только один щелчок мышью.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2021 Maxim Samokhval</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
